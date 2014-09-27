@@ -1,0 +1,33 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div ng-controller="TodoDetailCtrl">
+
+  <div class="container">
+  	<h3>Todo Detail</h3>
+  	<div class="row">
+
+  		<table class="table table-striped">
+          <tr>
+            <td>{{todo.content}}</td>
+          </tr>
+          <tr>
+            <td>{{todo.responsible_user}}</td>
+          </tr>
+          <tr>
+            <td>{{todo.registrant_user}}</td>
+          </tr>
+          <tr>
+            <td>{{todo.limit}}</td>
+          </tr>
+          <tr>
+            <td>{{todo.created_at}}</td>
+          </tr>
+          <tr>
+            <td>{{todo.updated_at}}</td>
+          </tr>
+  		</table>
+
+  	</div>
+  </div>
+
+</div>
