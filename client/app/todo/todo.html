@@ -45,7 +45,9 @@
         <th></th>
 	  	</tr>
       <tr ng:repeat="todo in todos | filter:{deleted_at: null}">
-        <td>{{todo.content}}</td>
+        <td>
+        	<a ng-href="todo/{{todo._id}}">{{todo.content}}</a>
+        </td>
         <td>{{todo.responsible_user}}</td>
         <td>{{todo.registrant_user}}</td>
         <td>{{todo.limit | date: 'y/M/d'}}</td>

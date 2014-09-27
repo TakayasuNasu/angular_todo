@@ -7,5 +7,10 @@ angular.module('todoApp')
         url: '/todo',
         templateUrl: 'app/todo/todo.html',
         controller: 'TodoCtrl'
+      })
+      .state('detail', {
+      	url: "/todo/:id",
+      	templateUrl: 'app/todo/todo.detail.html',
+      	controller: 'TodoDetailCtrl'
       });
   });
